@@ -6,10 +6,14 @@ stock int CreateBot(int client, bool forceCrouch, const char[] providedName = ""
     GetClientName(client, name, sizeof(name));
     StrCat(name, sizeof(name), " ");
     botNumberTaken = SelectBotNumber(client);
-    if (botNumberTaken > 1) {
+    if (botNumberTaken >= 3) {
       char buf[MAX_NAME_LENGTH + 1];
       Format(buf, sizeof(buf), "%d ", botNumberTaken);
       StrCat(name, sizeof(name), buf);
+    }
+    if (botNumberTaken == 4) {
+      botNumberTaken = 3;
+      PM_Message(client, "Max bots allowed is 3 :(");
     }
 
   } else {
