@@ -361,9 +361,9 @@ public void OnPluginStart() {
 
   // csutils powered nade stuff.
   {
-    RegConsoleCmd("sm_throw", Command_Throw);
-    PM_AddChatAlias(".throw", "sm_throw");
-    PM_AddChatAlias(".rethrow", "sm_throw");
+    // RegConsoleCmd("sm_throw", Command_Throw);
+    // PM_AddChatAlias(".throw", "sm_throw");
+    // PM_AddChatAlias(".rethrow", "sm_throw");
   }
 
   // Bot commands
@@ -461,10 +461,10 @@ public void OnPluginStart() {
     RegConsoleCmd("sm_renamegrenade", Command_RenameGrenade);
     PM_AddChatAlias(".rename", "sm_renamegrenade");
 
-    RegConsoleCmd("sm_savegrenade", Command_SaveGrenade);
-    PM_AddChatAlias(".addnade", "sm_savegrenade");
-    PM_AddChatAlias(".savenade", "sm_savegrenade");
-    PM_AddChatAlias(".save", "sm_savegrenade");
+    //RegConsoleCmd("sm_savegrenade", Command_SaveGrenade);
+    //PM_AddChatAlias(".addnade", "sm_savegrenade");
+    //PM_AddChatAlias(".savenade", "sm_savegrenade");
+    //PM_AddChatAlias(".save", "sm_savegrenade");
 
     RegConsoleCmd("sm_movegrenade", Command_MoveGrenade);
     PM_AddChatAlias(".resave", "sm_movegrenade");
