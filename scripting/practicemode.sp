@@ -360,11 +360,11 @@ public void OnPluginStart() {
   }
 
   // csutils powered nade stuff.
-  {
-    // RegConsoleCmd("sm_throw", Command_Throw);
-    // PM_AddChatAlias(".throw", "sm_throw");
-    // PM_AddChatAlias(".rethrow", "sm_throw");
-  }
+  //{
+  //   RegConsoleCmd("sm_throw", Command_Throw);
+  //   PM_AddChatAlias(".throw", "sm_throw");
+  //   PM_AddChatAlias(".rethrow", "sm_throw");
+  //}
 
   // Bot commands
   {
